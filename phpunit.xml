@@ -9,7 +9,6 @@
          convertWarningsToExceptions="true"
          processIsolation="false"
          stopOnFailure="false"
-         printerClass="Sempro\PHPUnitPrettyPrinter\PrettyPrinter"
 >
     <testsuites>
         <testsuite name="CustomRelationPackage">
@@ -21,7 +20,4 @@
             <directory>src/</directory>
         </whitelist>
     </filter>
-    <php>
-        <env name="DB_CONNECTION" value="testing"/>
-    </php>
 </phpunit>
