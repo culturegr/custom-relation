@@ -3,6 +3,7 @@
 namespace CultureGr\CustomRelation\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
+use CultureGr\CustomRelation\CustomRelationServiceProvider;
 
 abstract class TestCase extends Orchestra
 {
@@ -16,7 +17,7 @@ abstract class TestCase extends Orchestra
 
     protected function getPackageProviders($app)
     {
-        return ['CultureGr\CustomRelation\CustomRelationServiceProvider'];
+        return [CustomRelationServiceProvider::class];
     }
 
     /**
@@ -29,9 +30,9 @@ abstract class TestCase extends Orchestra
     {
         $app['config']->set('database.default', 'sqlite');
         $app['config']->set('database.connections.sqlite', [
-            'driver'   => 'sqlite',
+            'driver' => 'sqlite',
             'database' => ':memory:',
-            'prefix'   => '',
+            'prefix' => '',
         ]);
     }
 }

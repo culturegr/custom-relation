@@ -1,6 +1,6 @@
 {
   "name": "culturegr/custom-relation",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Easy implementation of custom Eloquent relations",
   "license": "MIT",
   "authors": [
@@ -18,13 +18,14 @@
   ],
   "require": {
     "php": "^7.3",
-    "illuminate/support": "^6.5|^7.0"
+    "illuminate/support": "^6.5|^7.0|^8.0"
   },
   "require-dev": {
     "phpunit/phpunit": "^9.1",
     "mockery/mockery": "^1.3",
-    "orchestra/testbench": "^5.1",
-    "sempro/phpunit-pretty-print": "^1.2"
+    "orchestra/testbench": "^4.8|^5.2|^6.0",
+    "sempro/phpunit-pretty-print": "^1.2",
+    "laravel/legacy-factories": "^1.0"
   },
   "autoload": {
     "psr-4": {
@@ -33,7 +34,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "CultureGr\\CustomRelation\\Tests\\": "tests"
+      "CultureGr\\CustomRelation\\Tests\\": "tests/"
     }
   },
   "scripts": {
