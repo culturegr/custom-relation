@@ -1,6 +1,6 @@
 {
   "name": "culturegr/custom-relation",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Easy implementation of custom Eloquent relations",
   "license": "MIT",
   "authors": [
