@@ -210,7 +210,7 @@ $user->load('permissions');
 ## Testing
 
 ``` bash
-$ composer test
+composer test
 ```
 
 ## License
