@@ -2,7 +2,8 @@
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
-[![Codeship Status for culturegr/custom-relation](https://app.codeship.com/projects/bd3fdc60-fe36-0137-0f7b-4e2f383e0ecd/status?branch=master)](https://app.codeship.com/projects/377736)
+![Github Actions](https://github.com/culturegr/test-actions/actions/workflows/run-tests.yml/badge.svg)
+
 
 This package provides an easy way to implement custom relationships between Eloquent models
 
