@@ -2,7 +2,7 @@
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
-![Github Actions](https://github.com/culturegr/test-actions/actions/workflows/run-tests.yml/badge.svg)
+![Github Actions](https://github.com/culturegr/custom-relation/actions/workflows/run-tests.yml/badge.svg)
 
 
 This package provides an easy way to implement custom relationships between Eloquent models
