@@ -16,17 +16,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v1
       - name: Cache dependencies
-        uses: actions/cache@v1
+        uses: actions/cache@v3
         with:
           path: ~/.composer/cache/files
-          key: depedencies-php-${{ matrix.php }}-composer-${{ hashFiles('composer.json') }}
+          key: dependencies-php-${{ matrix.php }}-composer-${{ hashFiles('composer.json') }}
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php }}
           extensions: dom, curl, libxml, mbstring, zip, pdo, sqlite, pdo_sqlite, gd, exif
           coverage: none
-      - name: Install depedencies
+      - name: Install dependencies
         run: composer update --${{ matrix.dependency-version }} --prefer-dist --no-interaction --no-suggest
       - name: Execute tests
         run: composer test
